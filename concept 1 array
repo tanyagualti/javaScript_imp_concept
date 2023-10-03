@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="sc">
+<script type="text/javascript">
+	
+	/*in this no need to specify the datatype according to lierals it considered this is string
+	datatype*/
+    let name="tanya";
+    document.write(name+"<br>");
+      
+     /*this is the int array as access criteria is 
+    smililar as java*/
+    let array=[10,20,30,40];
+   for(let i=0;i<=array.length-1;i++){
+   //br is use for next  line + is use for concatenation
+   	document.write(array[i]+"<br>");
+   }
+
+    
+
+</script>
+</body>
+</html>
