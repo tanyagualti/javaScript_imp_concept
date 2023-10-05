@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+<script type="text/javascript">
+	// normal function
+	function name(){
+		const username="tanya";
+		console.log(username);
+	} 
+	name(); 
+
+	// check normal function work with this keyword or not
+
+	function name1(){
+		const username1="tanya";
+		console.log(this.username1);
+	} 
+	name1(); // result is undefind (not working) this is only work with object let see bellow
+
+//check
+   const obj={
+   username2:"tanya",
+   //this function declaration is used in obj only 
+	name2:function(){
+		
+		console.log(this.username2);
+	} 
+    }
+    obj.name2();
+      
+      // check that function is work without object
+    name5:function(){
+    	const username5="manya";
+    	console.log(username5); //result is that function is not work without obj it gives error
+    }
+    name5();
+</script>
+</body>
+</html>
