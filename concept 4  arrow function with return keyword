@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+<script type="text/javascript">
+	// first arrow function concept
+      let chai =(num1,num2) =>{
+        	return num1+num2;
+            }
+      const result=chai(20,20);
+      console.log(result);
+
+        //second arrow function without return keyword bcz if we are not using curly braces then we can not use return keyword for returing the value.we asume return no need to write
+      let chai1=(num3,num4)=> num3+num4;
+        const result1=chai1(20,20);
+      console.log(result1);
+
+
+// third arrow function if we want to remove the
+     //confusion then we can rap the return values by curly braces but wrok is same
+   let chai2=(num5,num6)=> (num5+num6);
+        const result2=chai2(20,20);
+      console.log(result2);   
+</script>
+</body>
+</html>
