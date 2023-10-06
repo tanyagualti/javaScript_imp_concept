@@ -76,6 +76,16 @@ document.write("<br><br>");
 	document.write(typeof convert3+"<br>");
      //in true and false case it can be converted into number false=1 true=0
     document.write(convert3);
+
+
+document.write("check 0 and 1 bumber convert into boolaean or not<br>");
+     const check=1;
+     //if check literal is "" result is false if literal is "tanya" result is true if literal is 2 or 3 or 4 result is true
+     document.write(typeof check+"<br>");
+     const convert7=Boolean(check);
+     document.write(typeof convert7+"<br>");
+     document.write(convert7);//ans is true bcz of 1
+
 </script>
 </body>
 </html>
