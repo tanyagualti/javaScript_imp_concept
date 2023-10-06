@@ -86,6 +86,18 @@ document.write("check 0 and 1 bumber convert into boolaean or not<br>");
      document.write(typeof convert7+"<br>");
      document.write(convert7);//ans is true bcz of 1
 
+
+
+document.write("convert number into string<br>");
+     const check1=33;
+
+     document.write(typeof check1+"<br>");// type is number
+     const convert8=String(check1);//convert string 
+     document.write(typeof convert8+"<br>");//now type is string
+     document.write(convert8);
+
+
+     
 </script>
 </body>
 </html>
