@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+<body>
+<script type="text/javascript">
+	document.write("first investigation"+"<br>");
+	const user="10";//this is string variable
+
+	document.write("before converting type of \"10\"is:"+typeof user+"<br>");
+	//typeof is used to check which type of variable is there
+
+       
+	const convert=Number(user);//this is way to convert string to number Number is the predefined class
+
+	document.write("after converting type of \"10\"is:"+typeof convert+"<br>");//then we check ans is number instead of string
+
+
+	//NOW CHECK WHICH TYPE OF DATA CONVERT INTO NUMBER
+document.write("<br><br>");
+     document.write("second investigation"+"<br>");
+	const value="tan134"; //this is not proper number
+
+	const converting=Number(value);
+
+	document.write(typeof converting+"<br>");// typeof me ayga likha number hi this is the problem of js but jb hum converting ki real value check krnge to vo valid nhi hogi lets check
+
+
+// now result is NaN means Not a Number so it shows that "tan134" is not a number
+	document.write(converting);
+
+	document.write("<br><br>");
+
+
+	document.write("third investigation<br>");
+
+
+	const user1=undefined;
+	document.write(typeof user1+"<br>");
+    const convert1=Number(user1);
+    document.write(typeof convert1+"<br>");
+    document.write(convert1);
+    
+    document.write("<br><br>");
+
+
+	document.write("forth investigation<br>");
+
+	const user2=null;
+	document.write(typeof user2+"<br>");
+	const convert2=Number(user2);
+	document.write(typeof convert2+"<br>"); // ho toh jayga convert but jb value check krenge toh null k case me 0 ayga 
+	document.write(convert2);
+
+
+  
+    document.write("<br><br>");
+
+
+	document.write("fifth investigation<br>");
+
+	const user3=true;
+	document.write(typeof user3+"<br>");
+
+	const convert3=Number(user3);
+	document.write(typeof convert3+"<br>");
+     //in true and false case it can be converted into number false=1 true=0
+    document.write(convert3);
+</script>
+</body>
+</html>
