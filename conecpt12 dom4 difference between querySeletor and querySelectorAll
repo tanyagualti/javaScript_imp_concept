@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">first heading </h1>
+   <h1>second heading</h1>
+	 <h1>third heading</h1>
+<script type="text/javascript">
+	
+	//now see the difference between querySelector and querySelectorAll let see
+
+	//queryselector is give the first h1 text only not give the all h1
+
+const get=document.querySelector('h1');
+console.log(get);//result is only first heading
+
+//querySelectorAll is give the all h1 tags in the document list
+
+const get2=document.querySelectorAll('h1');
+console.log(get2);// this result is first second and third
+</script>
+</body>
+</html>
