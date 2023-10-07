@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">first heading </h1>
+   <h1 id="head2">second heading</h1>
+   <input type="text" name="">
+	 <p>third heading</p>
+
+	 <ul>
+	 	<li>one</li>
+	 		<li>two</li>
+	 			<li><h1>heading under li</h1></li>
+	 </ul>
+<script type="text/javascript">
+	
+//querySeletorAll gives node list
+//li is node list not array
+
+	const temp=document.querySelectorAll('li');
+	//temp.style.color='green'; ase color change nhi hoga bcz li node list hai array nhi so kuch changes aynge node list ko manupulate krke k liye
+
+//toh color ko change krne k liye hme btana hoga ki list ka kon sa part ka color chnage krna hhai
+temp[0].style.color='green';
+temp[1].style.backgroundColor='black';
+
+
+const headtemp=document.querySelectorAll('h1');
+console.log(headtemp);
+headtemp[0].style.backgroundColor='yellow';
+
+//but if we want to acess all values in node list we can use for each bcz in prototype for each is used
+
+headtemp.forEach(function (i){
+	i.style.color='aqua';
+})//for each lg gya ab ek ek ko fetch krne k bjay ek sth change ho jayga
+</script>
+</body>
+</html>
