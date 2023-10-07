@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">tanya gulati <span style="display: none;">is my name</span></h1>
+<script type="text/javascript">
+	
+//inner text is that text which is actually visible in html documnt
+const get=document.getElementById('heading').innerText;
+console.log(get);
+
+//content text is that text which is visible or not jo style use krke hidden bhi kr diya hai vo bhi show hoga
+const get2=document.getElementById('heading').textContent;
+console.log(get2);
+</script>
+</body>
+</html>
