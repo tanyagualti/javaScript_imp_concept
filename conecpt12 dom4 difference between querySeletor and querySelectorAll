@@ -1,3 +1,6 @@
+
+//html collection and node list is not proper array you can see in inspect console arr bna ke check kro usme map prototype milega nodelist m nhi hoga
+
 <!DOCTYPE html>
 <html>
 <head>
