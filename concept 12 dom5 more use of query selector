@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">first heading </h1>
+   <h1 id="head2">second heading</h1>
+   <input type="text" name="">
+	 <p>third heading</p>
+
+	 <ul>
+	 	<li>one</li>
+	 		<li>two</li>
+	 			<li><h1>heading under li</h1></li>
+	 </ul>
+<script type="text/javascript">
+	//use of query selector
+
+	const name=document.querySelector('.titlee');//select by class
+	const name2=document.querySelector('#head2');//select by id
+	const name3=document.querySelector('input[type="text"]');
+//select by input
+	console.log(name);
+	console.log(name2);
+	console.log(name3);
+
+const name4=document.querySelector('ul');//this is use for selection of full ul
+console.log(name4)
+const myli=name4.querySelector('h1');//lakin agr hum li me jo bhi tags likhe hai use access krna chahte hai toh ul k variable pr dubara query selector chala ke acess lr skte hai
+console.log(myli);
+
+</script>
+</body>
+</html>
