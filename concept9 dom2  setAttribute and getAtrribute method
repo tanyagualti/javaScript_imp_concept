@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">tanya gulati</h1>
+<script type="text/javascript">
+	// we have two methods setAttribute and getAttribute 
+  //setAttribute has two parameter first is which id and second is modifying id name like text  but this maipulation is overide the previous id name but you have to check in inspect -------if we want to stay the both id name then we have to write both
+  document.getElementById('heading').setAttribute('heading','heading text')
+
+//get attribute
+   const name= document.getElementById('heading').getAttribute('heading')
+    console.log(name);//result is heading text bcz in previous code we set attribute the text as well as heading 
+</script>
+</body>
+</html>
