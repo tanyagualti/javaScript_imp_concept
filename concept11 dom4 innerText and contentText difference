@@ -23,6 +23,11 @@ console.log(get);
 //content text is that text which is visible or not jo style use krke hidden bhi kr diya hai vo bhi show hoga
 const get2=document.getElementById('heading').textContent;
 console.log(get2);
+
+// innerHTML me hme vo bhi milega agr humne h1 k andr aur koi html tag bhi likh rkha hui toh letsee
+
+	const get3=document.getElementById('heading').innerHTML;
+	console.log(get3);
 </script>
 </body>
 </html>
