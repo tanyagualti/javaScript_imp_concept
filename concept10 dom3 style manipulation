@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">tanya gulati</h1>
+<script type="text/javascript">
+	
+
+	// first way to change the style through id is 
+	//document.getElementById('heading').style.color="black";
+
+	//second way is get the id in a variable and through this name variable we access the style 
+ const name=document.getElementById('heading');
+   name.style.fontSize="600px"
+</script>
+</body>
+</html>
