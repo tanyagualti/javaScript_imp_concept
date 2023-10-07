@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body id="sc">
+	 <h1 id="heading" class="titlee">first heading </h1>
+   <h1 id="head2">second heading</h1>
+   <input type="text" name="">
+	 <p>third heading</p>
+
+	 <ul>
+	 	<li class="list">one</li>
+	 		<li class="list">two</li>
+	 			<li class="list">three</li>
+                   <li class="list">four</li>
+	 </ul>
+<script type="text/javascript">
+	
+//html collecton ,node list and array these trio is not same so if we want to use foreach in html collection now we have to convert the html collection into array
+
+const item=document.getElementsByClassName('list');//this gives html collection
+	
+	const value=Array.from(item);
+	//this is conversion of html collection into array for use foreach
+
+	value.forEach(function(i){
+    i.style.color='pink';//change the color of list item
+})
+</script>
+</body>
+</html>
