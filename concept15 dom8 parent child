@@ -16,10 +16,10 @@
 	
 
 	<div class="parent">
-		<div class="monday">monday</div>
-		<div class="tuesday">tuesday</div>
-		<div class="wednesday">wednesday</div>
-		<div class="thursday">thursday</div>
+		<div class="day monday">monday</div>
+		<div class="day tuesday">tuesday</div>
+		<div class="day wednesday">wednesday</div>
+		<div class="day thursday">thursday</div>
 
 
 	</div>
@@ -40,6 +40,25 @@
 
     //change the style of particular children
     parent.children[2].style.color='blue';
+
+//this is for getting first child
+	console.log(parent.firstElementChild);
+	//getting last child
+	console.log(parent.lastElementChild);
+
+ //day is a class which has all days in div and we use the query selector so it only gives first day class element like monday only if we use query selector all then it gives all days node list
+    const dayone=document.querySelector('.day');
+    console.log(dayone);
+
+ //it is use for getting parent element of day one without treversing whole tree by using query selector in this is we get directly by using parent element
+    console.log(dayone.parentElement);
+
+
+//it is use to get the sibling in the tree structure ans is tuesday mondays sibling is trues day
+    console.log(dayone.nextElementSibling);
+
+//this console log ans is nodelist 9 but how bcz we have only 4 childs in parent div reason : this node is working as tree structure and if we give the line break after parent div so it also determine as node
+    console.log("nodes:",parents.childNodes);
 </script>
 </body>
 </html>
