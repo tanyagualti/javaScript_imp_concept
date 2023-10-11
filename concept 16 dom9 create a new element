@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="sc">
+	
+
+	
+<script type="text/javascript">
+	
+	//div is creating through javascript not html create element div and store in the variable division
+  const division=document.createElement('div');  
+  console.log(division);
+  //its create the class="main" thorugh js
+  division.className="main";
+  //craete id="myId"
+  division.id="myId";
+  //set atrribute in div tag
+  division.setAttribute("title","generated title");
+  //now we want to write text between the div innerText is also correct create TextNode is the second method
+  const node=document.createTextNode("tanya");
+//now div me jod diya next ko vo node varible me save hai
+  division.appendChild(node);
+  //document ki body me append kr diya division ko jo element create kiya tha 
+ document.body.appendChild(division);
+</script>
+</body>
+</html>
