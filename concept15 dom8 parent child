@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sc{
+			text-align: center;
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="sc">
+	
+
+	<div class="parent">
+		<div class="monday">monday</div>
+		<div class="tuesday">tuesday</div>
+		<div class="wednesday">wednesday</div>
+		<div class="thursday">thursday</div>
+
+
+	</div>
+<script type="text/javascript">
+	const parent=document.querySelector('.parent');
+    
+    console.log(parent);//for print the parent div
+    console.log(parent.children);//for print the all children of parent div
+    console.log(parent.children[2]);//it gives the html collection we are not apply in the for each but like array we access the particular child by give the index number
+    console.log(parent.children[2].innerHTML);//for print the inner html of particular children
+
+    //for each loop is not working in html collection but for loop is work as usual
+
+    for (var i = 0; i < parent.children.length; i++) {
+    	const element=parent.children[i];
+    	console.log(element);
+    }
+
+    //change the style of particular children
+    parent.children[2].style.color='blue';
+</script>
+</body>
+</html>
