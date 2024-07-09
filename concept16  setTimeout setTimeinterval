@@ -147,4 +147,64 @@ document.getElementById('stop').addEventListener('click',function(){
 </body>
 </html>
 
+
+//randomly change color
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interval Example</title>
+</head>
+<body>
+	<h1 id="one">shizuka</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script type="text/javascript">
+    	let intervals;
+    	const randomColor=function(){
+
+    		const hex='0123456789ABCDEF';
+
+    		
+       let color='#';
+
+       for(let i=0;i<6;i++){
+       	console.log(hex[Math.floor(Math.random()*16)]);
+       	color +=hex[Math.floor(Math.random()*16)];
+       }
+       return color;
+    	};
+    	console.log(randomColor());
+
+
+     function changeBg(){
+     		document.body.style.backgroundColor=randomColor();
+     }
+  document.getElementById('start').addEventListener('click',function(){
+ intervals= setInterval(changeBg,1000);
+  })
+
+   document.getElementById('stop').addEventListener('click',function(){
+   	clearInterval(intervals);
+   })
+    </script>
+</body>
+</html>
+
+
+break the code  for understanding
+
+	const randomColor = function() {
+    const hex = '0123456789ABCDEF';  //hex color are made from this 16 characters
+    let color = '#'; //strat with #
+    let val = Math.floor(Math.random() * 16); // math.random give the random number and * 16 ensure that give the number between 0 to 15 but it gives in float number so
+we use math.floor for round off value 
+    console.log(val);
+    console.log(hex[val]); then jo bhi value ayygo uske hisab s hex k array location pr vo value fetch ho jaygi
+};
+
+randomColor();
+
+
   
