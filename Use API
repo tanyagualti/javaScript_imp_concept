@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://randomuser.me/api/', true); // The third parameter (true) is optional as it's true by default
+    xhr.onreadystatechange = function() {
+        console.log()
+        if(xhr.readyState == 4){
+        	const data=JSON.parse(this.responseText);
+        	console.log(typeof data);// most of the time jb bhi url ata hai string me hi ata hai toh agr bina convert kre fetch krnge toh undefined ayga
+        	 console.log(data.results[0].dob.age);
+        }
+    };
+    xhr.send();
+</script>
+
+</body>
+</html>
